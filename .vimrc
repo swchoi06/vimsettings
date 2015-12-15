@@ -19,6 +19,8 @@ set softtabstop=2
 set encoding=UTF-8
 set fileencodings=UTF-8
 set backspace=eol,start,indent
+" Use clipboard instead of vim buffer
+set clipboard+=unnamed
 
 map j gj
 map k gk
