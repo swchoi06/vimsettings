@@ -55,3 +55,9 @@ if has("autocmd")
   " Close NERDTree after all file closed
   autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 endif
+
+" Coquille plugin for coq in vim
+:map J :CoqNext<Enter>
+:map K :CoqUndo<Enter>
+:map H :CoqToCurser<Enter>
+autocmd BufNewFile,BufRead *.v CoqLaunch
