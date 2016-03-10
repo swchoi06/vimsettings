@@ -62,5 +62,5 @@ endif
 " Coquille plugin for coq in vim
 :map J :CoqNext<Enter>
 :map K :CoqUndo<Enter>
-:map H :CoqToCurser<Enter>
+:map H :CoqToCursor<Enter>
 autocmd BufNewFile,BufRead *.v CoqLaunch
