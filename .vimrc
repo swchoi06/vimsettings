@@ -24,6 +24,9 @@ set clipboard+=unnamed
 
 map j gj
 map k gk
+:command W w
+:command Q q
+:command WQ wq
 "map <Up> <NOP>
 "map <Down> <NOP>
 "map <Left> <NOP>
