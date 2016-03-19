@@ -25,8 +25,8 @@ set clipboard+=unnamed
 map j gj
 map k gk
 :command W w
-:command Q q
 :command WQ wq
+:command -bang Q quit<bang>
 "map <Up> <NOP>
 "map <Down> <NOP>
 "map <Left> <NOP>
@@ -64,3 +64,7 @@ endif
 :map K :CoqUndo<Enter>
 :map H :CoqToCursor<Enter>
 autocmd BufNewFile,BufRead *.v CoqLaunch
+autocmd BufNewFile,BufRead *.v let g:coq = bufnr("%")
+autocmd BufLeave           *.v qa!
+autocmd BufNewFile,BufRead *.v vertical resize +30
+
