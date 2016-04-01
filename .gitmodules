@@ -67,3 +67,6 @@
 [submodule ".vim/bundle/vimbufsync"]
   path = .vim/bundle/vimbufsync
   url = https://github.com/def-lkb/vimbufsync.git
+[submodule ".vim/bundle/vim-gas"]
+	path = .vim/bundle/vim-gas
+	url = https://github.com/Shirk/vim-gas.git
