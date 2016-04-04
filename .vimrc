@@ -56,7 +56,7 @@ if has("autocmd")
   autocmd VimEnter * NERDTree
   autocmd VimEnter * wincmd p
   " Close NERDTree after all file closed
-  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 endif
 
 " Coquille plugin for coq in vim
