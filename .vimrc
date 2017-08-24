@@ -65,6 +65,6 @@ endif
 :map H :CoqToCursor<Enter>
 autocmd BufNewFile,BufRead *.v CoqLaunch
 autocmd BufNewFile,BufRead *.v let g:coq = bufnr("%")
-autocmd BufDelete          *.v wqa!
+autocmd BufWinLeave        *.v wqa!
 autocmd BufNewFile,BufRead *.v vertical resize +30
 
